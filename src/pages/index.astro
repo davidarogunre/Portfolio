@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { TiLocationArrowOutline } from "@react-icons/all-files/ti/TiLocationArrowOutline"
+import {BsPerson} from "@react-icons/all-files/bs/BsPerson"
+import {AiOutlineClockCircle} from "@react-icons/all-files/ai/AiOutlineClockCircle"
+---
+
+<Layout title="Folu" overview="David - Full Stack Developer">
+	<main class="xs:w-11/12 md:w-[650px] mx-auto flex flex-col gap-8">
+		<!--General Information -->
+
+		<div id="generalinfo" class="w-full flex justify-between leading-7 tracking-wide text-white mt-20">
+		<div>
+			<div class="text-[40px]">David</div>
+			<div class="mt-[20px]">
+			<div class="flex text-[15px] gap-1"><span class="relative top-[5px]"><TiLocationArrowOutline/></span>Bayelsa, Nigeria</div>
+			<div class="flex text-[15px] gap-1"><span class="relative top-[5px]"><BsPerson/></span><div><span  id="age"></span>y/o Developer and Innovator</div></div>
+			<div class="flex text-[15px] gap-1"><span class="relative top-[7px]"><AiOutlineClockCircle/></span> <div>It is currently <span id="time"></span></div></div>
+		</div>
+		</div>
+		<img class="-translate-y-[10px]" src="/avatar.png"/>
+		</div>
+
+		<!--Who am I -->
+		<div>
+			<div class="flex text-[35px] text-white">Hey 👋</div>
+			<div class="text-[18px] text-white">
+				I'm David, a full stack developer based in Nigeria at the moment.
+				I'm a Philomath(which means that I love learning). I also love exploring
+				different topics in mathematics  and physics such as calculus and Kinematics as well as listening to music.
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<script>
+	function getDateNow(){
+		return new Date().toLocaleString('en-US', {
+            timeZone: 'Africa/Lagos',
+            weekday: "long",
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            timeZoneName: 'short'
+        });
+    }
+	let ctime = getDateNow()
+	let time = document.getElementById("time")
+	time.innerHTML = ctime
+	setInterval(()=>{
+		let ctime = getDateNow()
+		time.innerHTML = ctime
+	}, 1000)
+
+
+	function getAge(){
+		let currentDate = new Date()
+		let birthDate = new Date("04/07/2008")
+		let difference = currentDate.getTime() - birthDate.getTime()
+		let age = document.getElementById("age")
+		let value = String(Math.floor(difference/(1000*60*60*24*356)))
+		age.innerText = value + "   "
+	}
+	getAge()
+</script>

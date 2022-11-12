@@ -1,0 +1,29 @@
+---
+export interface Props {
+	title: string;
+	overview: string;
+}
+
+const { title, overview } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image" href="/avatar.png"/>
+		<meta name="description" content={overview} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-black">
+		<slot />
+	</body>
+</html>
+<style is:global>
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400&display=swap');
+body{
+	font-family: Karla;
+}
+
+</style>
