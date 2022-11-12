@@ -3,13 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import { TiLocationArrowOutline } from "@react-icons/all-files/ti/TiLocationArrowOutline"
 import {BsPerson} from "@react-icons/all-files/bs/BsPerson"
 import {AiOutlineClockCircle} from "@react-icons/all-files/ai/AiOutlineClockCircle"
+import {IoLogoPython} from "@react-icons/all-files/io/IoLogoPython"
+import {DiJavascript1} from "@react-icons/all-files/di/DiJavascript1"
+import {FaDocker} from "@react-icons/all-files/fa/FaDocker"
+import {BsArrowRight} from "@react-icons/all-files/bs/BsArrowRight"
+import {SiTypescript} from "@react-icons/all-files/si/SiTypescript"
+import {SiDiscord} from "@react-icons/all-files/si/SiDiscord"
+import {AiOutlineGithub} from "@react-icons/all-files/ai/AiOutlineGithub"
 ---
 
 <Layout title="Folu" overview="David - Full Stack Developer">
-	<main class="xs:w-11/12 md:w-[650px] mx-auto flex flex-col gap-8">
+	<main class="xs:w-11/12 md:w-[650px] mx-auto flex flex-col gap-12">
 		<!--General Information -->
 
-		<div id="generalinfo" class="w-full flex justify-between leading-7 tracking-wide text-white mt-[120px]">
+		<div id="generalinfo" class="w-full flex justify-between leading-7 tracking-wide text-white mt-[85px]">
 		<div>
 			<div class="text-[40px]">David Arogunre</div>
 			<div class="mt-[20px]">
@@ -22,12 +29,39 @@ import {AiOutlineClockCircle} from "@react-icons/all-files/ai/AiOutlineClockCirc
 
 		<!--Who am I -->
 		<div>
-			<div class="flex text-[35px] text-white">who am I?</div>
+			<div class="flex text-[35px] text-white">Who am I?</div>
 			<div class="text-[18px] text-white">
 				I'm David, a full stack developer based in Nigeria at the moment.
-			I'm a <a class="text-blue-700" target="_blank" href="https://en.wikipedia.org/wiki/Philomath">philomath</a>. I also love exploring
+			I'm a <a class="text-blue-700" target="_blank" href="https://en.wikipedia.org/wiki/Philomath">philomath</a>. I play piano and also love exploring
 				different topics in mathematics  and physics such as calculus and Kinematics, as well as listening to music.
 			</div>
+		</div>
+		<!--Skills and Tech -->
+		<div>
+			<div class="text-[35px] text-white">Skills and Tech</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><IoLogoPython/></span>Python<BsArrowRight/>FastAPI</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><DiJavascript1/></span>Javascript<BsArrowRight/>Reactjs, Astro, Nextjs</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><SiTypescript/></span>TypeScript</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><FaDocker/></span>Docker</div>
+
+		</div>
+
+		<!--Socials -->
+		<div class="mb-[40px]">
+			<div class="text-[35px] text-white">Socials</div>
+			<div class="flex gap-2">
+			<div>
+				<a href="https://discord.com/users/davidarogunre" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="25" height="25" /></a>
+			</div>
+			<div>
+				<a href="https://www.github.com/davidarogunre" target="_blank" rel="noreferrer">    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" width="25" height="25" /></a>
+			</div>
+			<div>
+				<a href="https://www.twitter.com/davidarogunre" target="_blank" rel="noreferrer">    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="25" height="25" /></a>
+			</div>
+			<div><a href="https://www.twitch.tv/davidarogunre" target="_blank" rel="noreferrer">    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitch.svg" width="25" height="25" /></a>
+			</div>
+		</div>
 		</div>
 	</main>
 </Layout>

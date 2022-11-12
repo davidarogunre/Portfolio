@@ -21,9 +21,24 @@ const { title, overview } = Astro.props;
 	</body>
 </html>
 <style is:global>
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600&display=swap');
 body{
 	font-family: Karla;
+}
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1d1d1f;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #111112;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+
 }
 
 </style>
