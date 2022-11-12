@@ -6,10 +6,18 @@ import {AiOutlineClockCircle} from "@react-icons/all-files/ai/AiOutlineClockCirc
 import {IoLogoPython} from "@react-icons/all-files/io/IoLogoPython"
 import {DiJavascript1} from "@react-icons/all-files/di/DiJavascript1"
 import {FaDocker} from "@react-icons/all-files/fa/FaDocker"
-import {BsArrowRight} from "@react-icons/all-files/bs/BsArrowRight"
 import {SiTypescript} from "@react-icons/all-files/si/SiTypescript"
-import {SiDiscord} from "@react-icons/all-files/si/SiDiscord"
-import {AiOutlineGithub} from "@react-icons/all-files/ai/AiOutlineGithub"
+import {SiVisualstudiocode} from "@react-icons/all-files/si/SiVisualstudiocode"
+import {FaSpotify} from "@react-icons/all-files/fa/FaSpotify"
+import {SiPostgresql} from "@react-icons/all-files/si/SiPostgresql";
+import { Discord } from '@icons-pack/react-simple-icons';
+import { Twitter } from '@icons-pack/react-simple-icons';
+import { Linkedin } from '@icons-pack/react-simple-icons';
+import { Gmail } from '@icons-pack/react-simple-icons';
+import {FaReact} from "@react-icons/all-files/fa/FaReact"
+import {SiNextDotJs} from "@react-icons/all-files/si/SiNextdotjs"
+import {RiRocketLine} from "@react-icons/all-files/ri/RiRocketLine"
+import {Fastapi} from "@icons-pack/react-simple-icons"
 ---
 
 <Layout title="Folu" overview="David - Full Stack Developer">
@@ -39,28 +47,36 @@ import {AiOutlineGithub} from "@react-icons/all-files/ai/AiOutlineGithub"
 		<!--Skills and Tech -->
 		<div>
 			<div class="text-[35px] text-white">Skills and Tech</div>
-			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><IoLogoPython/></span>Python<BsArrowRight/>FastAPI</div>
-			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><DiJavascript1/></span>Javascript<BsArrowRight/>Reactjs, Astro, Nextjs</div>
+			<div class="md:grid md:grid-cols-3 xs:flex xs:flex-col leading-loose">
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><IoLogoPython/></span>Python</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><Fastapi width="15px" height="15px"/></span>FastAPI</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><DiJavascript1/></span>Javascript</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><FaReact/></span>ReactJS</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><SiNextDotJs/></span>NextJS</div>
+			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><RiRocketLine/></span>AstroJS</div>
 			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><SiTypescript/></span>TypeScript</div>
 			<div class="flex items-center gap-1 text-[18px] text-white font-medium"><span><FaDocker/></span>Docker</div>
-
 		</div>
-
+		</div>
+		<!--Tools -->
+		<div>
+			<div class="text-[35px] text-white">Tools</div>
+			<div class="leading-loose">
+			<div class="text-[18px] flex items-center gap-2 text-white font-medium"><SiVisualstudiocode/>Visual Studio Code</div>
+			<div class="text-[18px] flex items-center gap-2 text-white font-medium"><FaDocker/>Docker Desktop</div>
+			<div class="text-[18px] flex items-center gap-2 text-white font-medium"><FaSpotify/>Spotify</div>
+			<div class="text-[18px] flex items-center gap-2 text-white font-medium"><SiPostgresql/>PostgreSQL</div>
+		</div>
+		</div>
 		<!--Socials -->
-		<div class="mb-[40px]">
+		<div class="mb-[30px]">
 			<div class="text-[35px] text-white">Socials</div>
-			<div class="flex gap-2">
-			<div>
-				<a href="https://discord.com/users/davidarogunre" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="25" height="25" /></a>
-			</div>
-			<div>
-				<a href="https://www.github.com/davidarogunre" target="_blank" rel="noreferrer">    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" width="25" height="25" /></a>
-			</div>
-			<div>
-				<a href="https://www.twitter.com/davidarogunre" target="_blank" rel="noreferrer">    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="25" height="25" /></a>
-			</div>
-			<div><a href="https://www.twitch.tv/davidarogunre" target="_blank" rel="noreferrer">    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitch.svg" width="25" height="25" /></a>
-			</div>
+			<div class="flex gap-3">
+			<div><a href="https://discord.com/users/davidarogunre" target="_blank"><Discord color="white"/></a></div>
+			<div><a href="https://twitter.com/davidarogunre" target="_blank"><Twitter color="white"/></a></div>
+			<div><a href="https://www.linkedin.com/in/david-arogunre-78aa67177/" target="_blank"><Linkedin color="white"/></a></div>
+			<div><a href="mailto:davidarogunre@gmail.com" target="_blank"><Gmail color="white"/></a></div>
+
 		</div>
 		</div>
 	</main>
